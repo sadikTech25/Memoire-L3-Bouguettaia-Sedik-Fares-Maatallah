@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Ultra Event</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Favicons -->
+        <link rel="icon" href="logo.ico">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,400,500,700,900" rel="stylesheet"> 
+
+        <!-- Bootstrap CSS File -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Libraries CSS Files -->
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="vendor/animate/animate.min.css" rel="stylesheet">
+        <link href="vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+        <link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Main Stylesheet File -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Header Start -->
+        <header id="header">
+            <div class="container-fluid">
+
+                <div id="logo" class="pull-left">
+                    <!-- Uncomment below if you prefer to use text logo -->
+                    <!-- <h1><a href="index.html" class="scrollto">Tech Conference</a></h1> -->
+                    <a href="index.html"><img src="img/logo.png" alt="Logo" /></a>
+                </div>
+
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li class="menu-active"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="dropdown">
+                            <a href="#about">Events</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#eventtitle">AI: Intelligence artificial</a></li>
+                                <li><a href="#">AI: Conference</a></li>
+                                <li><a href="#">classical music</a></li>
+                                <!-- Add more events as needed -->
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="workspace/signin.php">Login</a></li>
+                        <li><a href="workspace/signup.php">SignUp</a></li>
+
+                    </ul>
+                </nav><!-- #nav-menu-container -->
+            </div>
+        </header>
+        <!-- #header end -->
+
+        <!-- Intro Section Start-->
+        <section id="intro">
+            <div class="intro-container">
+                <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+                    <ol class="carousel-indicators"></ol>
+
+                    <div class="carousel-inner" role="listbox">
+
+                        <div class="carousel-item active">
+                            <div class="carousel-background"><img src="img/slider-1.jpg" alt=""></div>
+                            <div class="carousel-container">
+                                <div class="carousel-content">
+                                    <h2>Simplified Event Creation</h2>
+                                    <p>
+                                        Create and manage your events in just a few clicks. Ultra Event offers a user-friendly interface allowing clients to set up hassle-free events, while providing maximum flexibility in customization.                                    </p>
+                                    <a href="#about" class="btn-get-started scrollto">Explore</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="carousel-background"><img src="img/slider-2.jpg" alt=""></div>
+                            <div class="carousel-container">
+                                <div class="carousel-content">
+                                    <h2>Intelligent Resource Management</h2>
+                                    <p>
+                                        Simplify resource management and booking with Ultra Event. Managers can easily allocate and plan the use of resources such as party rooms, AV equipment, and more, optimizing every aspect of the event.                                    </p>
+                                    <a href="#about" class="btn-get-started scrollto">Explore</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="carousel-background"><img src="img/slider-3.jpg" alt=""></div>
+                            <div class="carousel-container">
+                                <div class="carousel-content">
+                                    <h2>Connect With Reliable Suppliers</h2>
+                                    <p>
+                                        Ultra Event connects you to a network of trusted providers to meet all your event resource needs. From reception rooms to catering services, our platform guarantees transparent partnerships and quality services for every event.                                    </p>
+                                    <a href="#about" class="btn-get-started scrollto">Explore</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+
+                    <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+        <!-- #intro end -->
+
+        <!-- About Section Start-->
+        <section id="about">
+            <div class="container">
+                <header class="section-header">
+                    <h3>Upcoming Events</h3>
+                </header>
+                <div class="row">
+                    <div class="col-md-4 about-col-1">
+                        <div class="about-title">  
+                            <h1>Welcome to Ultra Event Management 2024</h1>
+                            <a href="#about">Explore</a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 about-col-2">
+                        <div class="about-imgs">
+                            <div class="about-img">
+                                <img class="img-fluid" src="img/about.jpg"  />
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="col-md-12 about-des">
+                        <div id="displayevents" class="row">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section end -->
+        
+        <!-- Speaker Section Start -->
+        <section id="speaker">
+            <div class="container">
+                <header class="section-header">
+                    <h3>Speakers</h3>
+                </header>
+                <div class="row">
+                    <div class="col-md-6 img-cols">
+                        <div class="img-col">
+                            <img class="img-fluid" src="img/speaker-1.jpg">
+                        </div>
+                    </div>
+                    <div class="col-md-6 content-cols content-cols-right">
+                        <div class="content-col">
+                            <h3>RobynBrown</h3>
+                            <h4>Product Designer</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam velit orci, tincidunt sit amet arcu eu, iaculis malesuada lectus. Sed non lectus at libero vulputate commodo egestas eu nulla.
+                            </p>
+                            <div class="social-links">
+                                <a href="#" class="x"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                  </svg></a>
+                                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6 img-cols d-block d-md-none">
+                        <div class="img-col">
+                            <img class="img-fluid" src="img/speaker-2.jpg">
+                        </div>
+                    </div>
+                    <div class="col-md-6 content-cols  content-cols-left">
+                        <div class="content-col">
+                            <h3>Simon Powell</h3>
+                            <h4>Cloud Architect</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam velit orci, tincidunt sit amet arcu eu, iaculis malesuada lectus. Sed non lectus at libero vulputate commodo egestas eu nulla.
+                            </p>
+                            <div class="social-links">
+                                <a href="#" class="twitter"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                  </svg></a>
+                                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 img-cols d-none d-md-block">
+                        <div class="img-col">
+                            <img class="img-fluid" src="img/speaker-2.jpg">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6 img-cols">
+                        <div class="img-col">
+                            <img class="img-fluid" src="img/speaker-3.jpg">
+                        </div>
+                    </div>
+                    <div class="col-md-6 content-cols content-cols-right">
+                        <div class="content-col">
+                            <h3>Britney Swanson</h3>
+                            <h4>Data Analyst</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam velit orci, tincidunt sit amet arcu eu, iaculis malesuada lectus. Sed non lectus at libero vulputate commodo egestas eu nulla.
+                            </p>
+                            <div class="social-links">
+                                <a href="#" class="twitter"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                  </svg></a>
+                                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6 img-cols d-block d-md-none">
+                        <div class="img-col">
+                            <img class="img-fluid" src="img/speaker-4.jpg">
+                        </div>
+                    </div>
+                    <div class="col-md-6 content-cols  content-cols-left">
+                        <div class="content-col">
+                            <h3>Matthew Lyons</h3>
+                            <h4>HR Specialist</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam velit orci, tincidunt sit amet arcu eu, iaculis malesuada lectus. Sed non lectus at libero vulputate commodo egestas eu nulla.
+                            </p>
+                            <div class="social-links">
+                                <a href="#" class="twitter"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                  </svg></a>
+                                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 img-cols d-none d-md-block">
+                        <div class="img-col">
+                            <img class="img-fluid" src="img/speaker-4.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Speaker Section End -->
+
+         <!-- Footer Start -->
+         <footer id="footer" class="pt-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <!-- Site Map -->
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-light mb-4 contact-item"><small>Site Map</small></h5>
+                        <ul class="list-unstyled">
+                            <li><a class="contact-item" href="index.html"><small><i class="fa fa-chevron-right"></i>Home</a></small></li>
+                            <li><a class="contact-item" href="about.html"><small><i class="fa fa-chevron-right"></i>About us</a></small></li>
+                            <li><a class="contact-item" href="contact.html"><small><i class="fa fa-chevron-right"></i>Contact</a></small></li>
+                        </ul>
+                    </div>
+                    <!-- Quick Links -->
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-light mb-4 contact-item"><small>Quick Links</small></h5>
+                        <ul class="list-unstyled">
+                            <li><a class="contact-item" href="cgu.html"><small><i class="fa fa-chevron-right"></i>TCU</a></small></li>
+                            <li><a class="contact-item" href="mentions.html"><small><i class="fa fa-chevron-right"></i>Privacy Policy</a></small></li>
+                            <li><a class="contact-item" href="workspace/signin.php"><small><i class="fa fa-chevron-right"></i>Login</a></small></li>
+                        </ul>
+                    </div>
+                    <!-- Our Contact Details -->
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-light mb-4 contact-item"><small>Our Contact Details</small></h5>
+                        <ul class="list-unstyled">
+                            <li class="contact-item"><small><i class="fa fa-map-marker me-2"></i>University Badji Mokhtar Annaba</small></li>
+                            <li class="contact-item"><small><i class="fa fa-phone me-2"></i>+213 (0) 542 747 933</small></li>
+                            <li class="contact-item"><small><i class="fa fa-phone me-2"></i>+213 (0) 770 018 414</small></li>
+                            <li class="contact-item"><small><i class="fa fa-envelope me-2"></i>ultraevent@gmail.com</small></li>
+                        </ul>
+                    </div>
+                    <!-- Follow Us -->
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-light mb-4 contact-item"><small>Follow Us</small></h5>
+                        <div class="d-flex">
+                            <a href="https:www.x.com" class="btn btn-square btn-outline-light me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                              </svg></a>
+                            <a href="https:www.facebook.com" class="btn btn-square btn-outline-light me-2"><i class="fa fa-facebook"></i></a>
+                            <a href="https:wwwinstagram.com" class="btn btn-square btn-outline-light me-2"><i class="fa fa-instagram"></i></a>
+                            <a href="https:www.linkedin.com" class="btn btn-square btn-outline-light me-2"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-4">
+                <div class="text-center">
+                    <p class="mb-0">
+                        &copy; <span id="year">2024</span> Ultra Events. All Rights Reserved<br>
+                        Developed By <a href="#" class="text-primary">Bouguettaia & Matallah</a>. Front-end Designed By <a href="https://www.htmlcodex.com" class="text-primary">HtmlCodex.com</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- #footer end -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        <!-- JavaScript Libraries -->
+       <!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/jquery/jquery-migrate.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/easing/easing.min.js"></script>
+<script src="vendor/superfish/hoverIntent.js"></script>
+<script src="vendor/superfish/superfish.min.js"></script>
+<script src="vendor/waypoints/waypoints.min.js"></script>
+<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+<script src="vendor/touchSwipe/jquery.touchSwipe.min.js"></script>
+
+<!-- Main Javascript File -->
+<script src="js/main.js"></script>
+<script src="workspace/js/event.js"></script>
+
+
+    </body>
+</html>
