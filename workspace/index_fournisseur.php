@@ -87,9 +87,6 @@ switch($account->type_utilisateur)
                 <a href="#" class="sidebar-toggler flex-shrink-0">
                     <i class="fa fa-bars"></i>
                 </a>
-                <form class="d-none d-md-flex ms-4">
-                    <input class="form-control border-0" type="search" placeholder="Search">
-                </form>
                
                 <div class="navbar-nav align-items-center ms-auto">
                     <div><a href="addressources.php"><button type="button" class="btn btn-primary" style="margin:15px;">
@@ -98,7 +95,6 @@ switch($account->type_utilisateur)
                     </div> 
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <!-- <img class="rounded-circle me-lg-2" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">-->
                             <span class="d-none d-lg-inline-flex"><?php echo $account->nom_utilisateur .' '. $account->prenom_utilisateur ?></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">

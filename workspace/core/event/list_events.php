@@ -79,8 +79,8 @@ if(isset($stmt) && $stmt !== false && $stmt->rowCount() > 0) {
                     '.($line->etat_evenement == 0 ? '<button type="button" class="btn btn-sm btn-primary open-popup-btn" data-toggle="modal" data-target="#exampleModal" data-event-id="'.$line->id_evenement.'">
                     <small><i class="bi bi-check-circle-fill"> </i> Accepter</small>
                     </button>
-                    <button type="button" class="btn btn-sm btn-danger open-popup-btn" data-toggle="modal" data-target="#exampleModal" data-event-id="'.$line->id_evenement.'">
-                    <small><i class="bi bi-x-circle-fill"> </i> Refuser</small>
+                    <button type="button" class="btn btn-sm btn-danger" onclick="refuseEvent('.$line->id_evenement.')">
+                    <small><i class="bi bi-x-circle-fill"></i> Refuser</small>
                     </button>' : '').'
                 </td>
             </tr>';
@@ -140,13 +140,32 @@ echo $html;
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
     <script>
-        $(document).ready(function() {
-            $('.open-popup-btn').on('click', function() {
-                var eventId = $(this).data('event-id');
-                $('#floatingSelect').html('<option value="' + eventId + '">' + $(this).closest('tr').find('td:first').text() + '</option>');
-            });
+    $(document).ready(function() {
+        $('.open-popup-btn').on('click', function() {
+            var eventId = $(this).data('event-id');
+            $('#floatingSelect').html('<option value="' + eventId + '">' + $(this).closest('tr').find('td:first').text() + '</option>');
         });
 
+
+    });
+    function refuseEvent(eventId) {
+            if (confirm('Etes-vous certain de vouloir refuser cet événement ?')) {
+                $.ajax({
+                    url: 'core/event/refuse_event.php',
+                    method: 'POST',
+                    data: { id: eventId },
+                    success: function(response) {
+                        alert('L\'événement a été refusé.');
+                        location.reload();
+                    },
+                    error: function(xhr, status, error) {
+                        console.error(xhr.responseText);
+                        alert('Erreur lors de la tentative de refus de l\'événement.');
+                    }
+                });
+            }
+        }
+        
         function select_manager() {
             var formData = $('#assign-manager-form').serialize();
             $.ajax({
@@ -162,6 +181,7 @@ echo $html;
                 }
             });
         }
-    </script>
+</script>
+
 </body>
 </html>

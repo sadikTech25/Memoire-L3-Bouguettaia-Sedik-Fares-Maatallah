@@ -87,10 +87,7 @@ switch($account->type_utilisateur)
                 <a href="#" class="sidebar-toggler flex-shrink-0">
                     <i class="fa fa-bars"></i>
                 </a>
-                <form class="d-none d-md-flex ms-4">
-                    <input class="form-control border-0" type="search" placeholder="Search">
-                </form>
-               
+                
                 <div class="navbar-nav align-items-center ms-auto" style="margin:13px">
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
@@ -123,7 +120,7 @@ switch($account->type_utilisateur)
                 </div>
                 <div class="form-floating mb-3">
                     <select name="type" class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                    <option value="0" selected="">Tables</option>
+                            <option value="10">Tables</option>
                             <option value="1">Chairs</option>
                             <option value="2">Speakers</option>
                             <option value="3">Screens</option>
@@ -131,10 +128,12 @@ switch($account->type_utilisateur)
                             <option value="5">Security Agent</option>
                             <option value="6">Cars</option>
                             <option value="7">Salle Des Fétes</option>
+                            <option value="8">Hotel</option>
+                            <option value="9">Salle De Conference</option>
 
 
                     </select>
-                    <label for="floatingSelect">Ressources Available</label>
+                    <label for="floatingSelect">Ressource Type</label>
                 </div>
                 <div class="form-floating mb-3">
                     <input name="quantite" type="number" class="form-control quantity-picker-input" id="floatingQuantity" value="1" aria-label="Quantity" required>
@@ -144,7 +143,7 @@ switch($account->type_utilisateur)
                     <input name="prix" type="number" class="form-control quantity-picker-input" id="floatingQuantity" value="1" aria-label="Quantity" required>
                   <label for="floatingQuantity">Price DA</label>
                 </div>
-                <input name="file" class="form-control form-control-lg mb-3" id="formFileLg" type="file">
+                <input name="file" class="form-control form-control-lg mb-3" id="formFileLg" type="file" required>
                 <div class="form-floating mb-3">
                 <button type="submit" class="btn btn-primary mb-3">Submit Materials</button>
                 <button type="reset" class="btn btn-secondary mb-3">Reset</button>

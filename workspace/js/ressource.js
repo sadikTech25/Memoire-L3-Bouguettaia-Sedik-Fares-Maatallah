@@ -1,15 +1,8 @@
 $(document).ready(function () {
-    $('div#display').load('core/ressorces/list.php');
-    // $('div#available_ressources').load('core/ressorces/list_available_ressources.php?');
+    $('div#displayressource').load('core/ressorces/list.php');
     $('div#displaysupplierressource').load('core/ressorces/list_supplierressource.php');
 });
-/* function add_to_panier(idr) {
-    var idrd = $('div#idr'+idr).val();
-    var utrd = $('div#utr'+idr).val();
-    $.post('available_ressources.php', {idrd:idrd, utrd:utrd}, function () { }, 'text');
-} */
 function addToPanier(eventId, idr,resourceQte) {
-    // var idrd = $('div#idr'+idr).val();
     var utrd = $('div#utr'+idr).val();
 
     if(utrd > 0 && utrd <= ressourceQte)
@@ -22,8 +15,6 @@ function addToPanier(eventId, idr,resourceQte) {
             success: function(response) {
                 // Handle success response, e.g., display a success message
                 alert('Resource added to cart successfully!');
-                // Optionally, you can update the cart contents dynamically on the page
-                // Here, you can reload or update the cart content after adding an item
                 location.reload(); // For example, reload the page to refresh the cart
             },
             error: function(xhr, status, error) {

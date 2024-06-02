@@ -40,6 +40,26 @@ switch($account->type_utilisateur)
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .search-container {
+            position: relative;
+            width: 400px;
+        }
+
+        .search-container input[type="search"] {
+            padding-left: 20px; /* Adjust this value as needed */
+            margin-left:30px;
+        }
+
+        .search-container .fa-search {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #aaa;
+            margin-left:20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -90,9 +110,14 @@ switch($account->type_utilisateur)
                 <a href="#" class="sidebar-toggler flex-shrink-0">
                     <i class="fa fa-bars"></i>
                 </a>
-                <form class="d-none d-md-flex ms-4">
-                    <input class="form-control border-0" type="search" placeholder="Search">
-                </form>
+
+                <div class="search-container">
+                    <form class="d-none d-md-flex ms-4">
+                    <i class="fa fa-search"></i>
+                        <input class="form-control border-0" id="searchInput" type="search" placeholder="Search for Suppliers .." style="width:400px">
+                    </form>
+                </div>
+
                 <div class="navbar-nav align-items-center ms-auto" style="margin:8px">
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
@@ -158,10 +183,6 @@ switch($account->type_utilisateur)
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="js/supplier.js"></script>
-
-
-    <!-- Custom JavaScript -->
-    
 </body>
 
 </html>

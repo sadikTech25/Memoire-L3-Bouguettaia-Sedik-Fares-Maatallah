@@ -99,9 +99,8 @@ switch($account->type_utilisateur)
                 <a href="#" class="sidebar-toggler flex-shrink-0">
                     <i class="fa fa-bars"></i>
                 </a>
-                <div><form class="d-none d-md-flex ms-4">
-                    <input class="form-control border-0" id="searchInput" type="search" placeholder="Search">
-                </div></form>
+                <div>
+                </div>
                 <div class="navbar-nav align-items-center ms-auto"style="margin:8px">
                     
                     <div class="nav-item dropdown">

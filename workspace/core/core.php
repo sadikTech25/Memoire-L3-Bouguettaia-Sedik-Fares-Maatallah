@@ -29,7 +29,7 @@ class core_manager
 
         switch ($code) 
         {            
-            case 0 : $label = 'Tables'; break;
+            case 10 : $label = 'Tables'; break;
             case 1 : $label = 'Chairs'; break;
             case 2 : $label = 'Speakers'; break;
             case 3 : $label = 'Screens'; break;
@@ -37,6 +37,8 @@ class core_manager
             case 5 : $label = 'Security Agent'; break;
             case 6 : $label = 'Cars'; break;
             case 7 : $label = 'Salle Des Fétes'; break;
+            case 8 : $label = 'Hotel'; break;
+            case 9 : $label = 'Salle De Conference'; break;
 
         }
 
